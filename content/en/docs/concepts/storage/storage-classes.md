@@ -255,7 +255,7 @@ parameters:
   be used at the same time.
 * `iopsPerGB`: only for `io1` volumes. I/O operations per second per GiB. AWS
   volume plugin multiplies this with size of requested volume to compute IOPS
-  of the volume and caps it at 20 000 IOPS (maximum supported by AWS, see
+  of the volume and caps it at 64 000 IOPS (maximum supported by AWS, see
   [AWS docs](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html).
   A string is expected here, i.e. `"10"`, not `10`.
 * `fsType`: fsType that is supported by kubernetes. Default: `"ext4"`.
